@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link href="estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="pantallaInicio">
+    <div>
+      <img alt="" src="simon.png" />
+      <h1>Simon</h1>
+    </div>
+    <div>
+      <input id="iniciarJuego" type="button" value="Iniciar" onclick="empezarJuego()"/>
+    </div>
+  </div>
+  <div id="pantallaJuego">
+    <div class="tablero">
+      <div class="tablero-columna">
+        <div id="boton-secuencia-1" class="boton-secuencia" onmousedown="botonPresionado(event)" onmouseup="limpiarSecuenciaActual(event)" onclick="validarPasoJugador(event)"></div>
+        <div id="boton-secuencia-2" class="boton-secuencia" onmousedown="botonPresionado(event)" onmouseup="limpiarSecuenciaActual(event)" onclick="validarPasoJugador(event)"></div>
+      </div>
+      <div class="tablero-columna">
+        <div id="boton-secuencia-3" class="boton-secuencia" onmousedown="botonPresionado(event)" onmouseup="limpiarSecuenciaActual(event)" onclick="validarPasoJugador(event)"></div>
+        <div id="boton-secuencia-4" class="boton-secuencia" onmousedown="botonPresionado(event)" onmouseup="limpiarSecuenciaActual(event)" onclick="validarPasoJugador(event)"></div>
+      </div>
+      <div>
+        <input id="volver" type="button" value="Volver" onclick="volver()"/>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
